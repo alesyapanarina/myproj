@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+
+
+
+<style type="text/css">
+
+DIV.example_div {
+  background-color: blue;
+  width: 250px;
+  border: 2px #000000 solid;
+  color: #000000;
+}
+body{
+  background: url(temn.jpg) ;
+}
+</style>
+
+
+<style type="text/css" id="design_1" title="design_1">
+DIV.example_div {
+  background-color: green;
+  width: 250px;
+  border: 2px blue solid;
+  color: yeelow;
+}
+body{
+  background: url(svet.jpg) ;
+}
+</style>
+<script language="javascript">
+function change_design(design_id) {
+
+  // Заносим в переменную hash_css имена наших переключаемых стилей
+  var hash_css = {'design_1':1, 'design_2':1, 'design_3':1};
+
+  // Просматриваем все стили, которые есть на нашей странице
+  for (var i=0; i<document.styleSheets.length; i++) {
+    var s = document.styleSheets[i];
+    var name_style = s.id || s.title;
+
+    // Если имя нашедшегося стиля соответствует одному из переключаемых
+    // и оно не соответствует передаваемому, то выключаем его 
+    if (hash_css[name_style] && (name_style != design_id)) {
+      s.disabled = true;
+    }
+    // Если имя нашедшегося стиля соответствует одному из переключаемых
+    // и оно соответствует передаваемому, то включаем его 
+      if (hash_css[name_style] && (name_style == design_id)) {
+      s.disabled = false;
+    }
+  }
+}
+</script>
+
+
+
+
+    <meta charset="UTF-8">
+    <title>Моя личная страница</title>
+
+<div>
+ 
+ 
+    <a href="index.html"><img align="left"  src="logo.png" class="logo"></a>
+  <button value="1" onclick="change_design('design_1')"><img src="sun.jpg" alt="img" class="but"></button>
+    <button value="2" onclick="change_design('design_2')"><img src="luna.png" alt="img" class="but"></button>
+               <nav class="menu">
+<ul id="navbar" class="menu">
+  <li><a href="index.html">Главная</a></li>
+  <li><a href="str2.html">Успехи в учебе</a></li>
+  <li><a href="1.html">Мои проекты</a>
+    <ul>
+           <li><a href="1.html">Поршень</a></li>
+        <li><a href="2.html">Подшипник</a></li>
+        <li><a href="3.html">Муфта</a></li>
+        <li><a href="4.html">Мышка</a></li>
+        <li><a href="5.html">Колесо</a></li>
+        <li><a href="6.html">Деталь</a></li>
+      </ul>
+      </li>
+  <li><a href="str3.html">Интересы</a></li>
+   <li><a href="str5.html">Фотоголерея</a></li>
+  <li><a href="str4.html">Мой город</a></li>
+
+</ul>
+
+</div>
+
+</head>
+<body>
+
+<p>Как и все предыдущие семестры, прошлый был не совсем легким. Но не смотря на это я успешно сдала сессию и получила хорошие баллы.</p>
+<h2>Мои успехи в учебе:</h2>
+ <table>
+ 	<tr>
+ 		<th rowspan="2">Предмет</th>
+ 		<th rowspan="2">Преподаватель</th>
+ 		<th colspan="3"> Оценка </th>
+ 	</tr>
+ 	<tr>
+ 		<th>По национальной шкале</th>
+ 		<th>Количество баллов</th>
+ 		<th>По шкале ESTS</th>
+ 		
+ 	</tr>
+ 	<tr>
+ 		<td>Компьютерные сети</td>
+ 		<td>Трубаев А.И.</td>
+ 		<td>Відм</td>
+ 		<td>96</td>
+ 		<td>А</td>
+ 	</tr>
+ 	<tr>
+ 		<td>Охрана труда</td>
+ 		<td>Кузьменко О.Е.</td>
+ 		<td>Відм</td>
+ 		<td>95</td>
+ 		<td>А</td>
+ 	</tr>
+ 	<tr>
+ 		<td>Моделирование систем</td>
+ 		<td>Петрова Ю.А.</td>
+ 		<td>Відм</td>
+ 		<td>100</td>
+ 		<td>А</td>
+ 	</tr>
+ 	<tr>
+ 		<td>Математические методі исследования операций</td>
+ 		<td>Иглин С.П.</td>
+ 		<td>Відм</td>
+ 		<td>98</td>
+ 		<td>А</td>
+ 	</tr>
+ 	<tr>
+ 		<td>Украинский язык</td>
+ 		<td>Сухоруков В.А.</td>
+ 		<td>Відм</td>
+ 		<td>97</td>
+ 		<td>А</td>
+ 	</tr>
+ 	<tr>
+ 		<td>БЖД</td>
+ 		<td>Кузьменко О.Е.</td>
+ 		<td>Відм</td>
+ 		<td>96</td>
+ 		<td>А</td>
+ 	</tr>
+ 	<tr>
+ 		<td>Правоведение</td>
+ 		<td>Гаевая А.И.</td>
+ 		<td>Відм</td>
+ 		<td>100</td>
+ 		<td>А</td>
+ 	</tr>
+ 	<tr>
+ 		<td>Колебание механических систем</td>
+ 		<td>Трубаев А.И.</td>
+ 		<td>Відм</td>
+ 		<td>96</td>
+ 		<td>А</td>
+ 	</tr>
+ 	<tr>
+ 		<td>Технологии создания программных продуктов</td>
+ 		<td>Ларин А.А.</td>
+ 		<td>Відм</td>
+ 		<td>100</td>
+ 		<td>А</td>
+ 	</tr>
+ 	<tr>
+ 		<td>Физическое воспитание</td>
+ 		<td>Капустина Т.И.</td>
+ 		<td>Відм</td>
+ 		<td>100</td>
+ 		<td>А</td>
+ 	</tr>
+ </table>
+
+</body>
+</html>

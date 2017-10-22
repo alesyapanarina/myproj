@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+
+
+
+<style type="text/css">
+
+DIV.example_div {
+  background-color: blue;
+  width: 250px;
+  border: 2px #000000 solid;
+  color: #000000;
+}
+body{
+  background: url(temn.jpg) ;
+}
+</style>
+
+
+<style type="text/css" id="design_1" title="design_1">
+DIV.example_div {
+  background-color: green;
+  width: 250px;
+  border: 2px blue solid;
+  color: yeelow;
+}
+body{
+  background: url(svet.jpg) ;
+}
+</style>
+<script language="javascript">
+function change_design(design_id) {
+
+  // Заносим в переменную hash_css имена наших переключаемых стилей
+  var hash_css = {'design_1':1, 'design_2':1, 'design_3':1};
+
+  // Просматриваем все стили, которые есть на нашей странице
+  for (var i=0; i<document.styleSheets.length; i++) {
+    var s = document.styleSheets[i];
+    var name_style = s.id || s.title;
+
+    // Если имя нашедшегося стиля соответствует одному из переключаемых
+    // и оно не соответствует передаваемому, то выключаем его 
+    if (hash_css[name_style] && (name_style != design_id)) {
+      s.disabled = true;
+    }
+    // Если имя нашедшегося стиля соответствует одному из переключаемых
+    // и оно соответствует передаваемому, то включаем его 
+      if (hash_css[name_style] && (name_style == design_id)) {
+      s.disabled = false;
+    }
+  }
+}
+</script>
+
+
+
+
+    <meta charset="UTF-8">
+    <title>Моя личная страница</title>
+
+<div>
+ 
+ 
+    <a href="index.html"><img align="left"  src="logo.png" class="logo"></a>
+  <button value="1" onclick="change_design('design_1')"><img src="sun.jpg" alt="img" class="but"></button>
+    <button value="2" onclick="change_design('design_2')"><img src="luna.png" alt="img" class="but"></button>
+          <nav class="menu">
+<ul id="navbar" class="menu">
+  <li><a href="index.html">Главная</a></li>
+  <li><a href="str2.html">Успехи в учебе</a></li>
+  <li><a href="1.html">Мои проекты</a>
+    <ul>
+            <li><a href="1.html">Поршень</a></li>
+        <li><a href="2.html">Подшипник</a></li>
+        <li><a href="3.html">Муфта</a></li>
+        <li><a href="4.html">Мышка</a></li>
+        <li><a href="5.html">Колесо</a></li>
+        <li><a href="6.html">Деталь</a></li>
+      </ul>
+      </li>
+  <li><a href="str3.html">Интересы</a></li>
+   <li><a href="str5.html">Фотоголерея</a></li>
+  <li><a href="str4.html">Мой город</a></li>
+
+</ul> 
+
+</nav>
+
+</div>
+
+    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+
+</head>
+<style>
+#dv1,#dv2,#dv3{width:50px;margin:20px;height:20px;float:left}
+#d1,#d2,#d3{width:30px;height:10px}
+</style>
+<body>
+<h3>
+  3D модель муфты
+  <br> Среда разработки - SOLIDWORKS 2016 x64 Edition
+  <br> Тип файла: VRML File (.wrl)
+  <br> Автор: Панарина Олеся
+  <br> Группа: И-14б
+</h3>
+<script type="text/javascript">
+allDiv=3;
+function showDv(n){
+    for(i=1;allDiv+1>i;i++){
+    document.getElementById('d'+i).style.visibility = 'hidden';
+    }
+    document.getElementById('d'+n).style.visibility = 'visible';
+}
+</script>
+</body>
+</html>
+<OBJECT
+CLASSID="CLSID:86A88967-7A20-11d2-8EDA-00600818EDB1"
+CODEBASE="http://www.cortona3d.com/bin/cortona3d.cab#Version=6,0,0,179"
+WIDTH="600"
+HEIGHT="500">
+<PARAM NAME="SRC" VALUE="mufta.wrl">
+</OBJECT>
+</html>

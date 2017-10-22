@@ -1,0 +1,165 @@
+body{
+
+/*	background-image: url(temn.jpg);*/
+background: url(temn.jpg) ;
+
+	background-size: 100%;
+  text-align: center;
+}
+body.opac{
+  opacity: 0.2;
+}
+h1{
+  font-size: 50px;
+  text-decoration: underline overline;
+	text-align: center;
+	color:  yellow;
+ font-family: cursive;
+
+}
+
+
+h2{
+  text-align: left;
+  font-size: 20px;
+	font-style: italic;
+	color: #000080;
+  
+}
+h3{
+  font-size: 30px;
+	font-style: italic;
+	color: #000080;
+}
+table, th, td { 
+  font-size: 20px;
+text-align: center;
+  border: 1px solid   #9400D3;
+color: #000080 }
+th{
+  font-size: 25px;
+}
+
+img.ii {
+  margin-top: 0px;
+border-radius: 50%;
+    border: 5px solid yellow;
+    height: 500px;
+   }
+   img.but {
+  margin-top: 0px;
+    border: 0px solid yellow;
+    height: 30px;
+    width: 30px;
+    
+  }
+   img.kino {
+z-index: 0;
+  margin-top: 0px;
+    border: 0px solid yellow;
+    height: 100px;
+    width: 100%;
+    opacity: 0.5;
+   }
+   button{
+  border: 0px;
+  float: right;
+border-radius: 5px;
+  position: inherit;
+  background: rgb(10,5,1); 
+}
+   img.logo {
+    border: 1px solid yellow;
+    height: 65px;
+    width: 65px;
+   }
+ img {
+border-radius: 10px;
+    border: 3px solid white;
+    height: 700px;
+
+   }
+
+    p{
+   	color: #191970;
+   	font-size: 30px;
+   	font-style: italic;
+   }
+   #navbar {
+    z-index: 10;
+  margin: 76px;
+  padding: 10px;
+  list-style-type: none;
+  border: 1px solid orange;
+  border-radius: 20px 5px;
+  width: 80%;
+  text-align: center;
+  background-color:   rgb(167,78,20);
+}
+#navbar {
+  margin: 0;
+  padding: 0;}
+
+#navbar a {
+  padding: 5px 25px;
+  text-decoration: none;
+ 
+  width: 0.5%;
+}
+.menu ul li{
+  padding: 10px;
+}
+.menu ul > li:hover{
+   border-radius: 20px 5px;
+  background-color: #f96;
+}
+.menu ul ul > li:hover{
+  background-color: #f96;
+}
+.menu ul li, .menu ul{
+  display: inline-block;
+}
+.menu ul{
+ position: relative;
+  margin: 0;
+  padding: 0;
+  background-color: #f63;
+}
+.menu ul ul{
+  display: none;
+  position: absolute;
+  background-color: rgb(167,78,20);
+  margin-top: 10px;
+ margin-left: -10px;
+}
+.menu ul a{
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+}
+.menu ul ul a{
+  color: #fff;
+  text-decoration: none;
+}
+.menu li:hover ul{
+  display: block;
+}
+
+.menu li:hover li{
+  display: block;
+}
+
+#slider{
+  z-index: 0;
+}
+
+#film li { display: block; }
+#film {
+  font-size: 30px;
+}
+ object{
+  z-index: 0;
+ }
+ #models{
+  z-index: 0;
+ }
